@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .contenido {
@@ -25,6 +26,7 @@ body {
     text-shadow: 5px 5px 10px rgb(29, 0, 190);
     margin-bottom: 5vh;
     transition: transform 2s ease, opacity 1s ease;
+    transform: translateY(0);
 }
 
 .carta {
@@ -34,6 +36,7 @@ body {
     background: white;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .carta h2 {
@@ -97,11 +100,11 @@ button:hover {
 }
 
 .portada.caida {
-    transform: translateY(150%) rotate(15deg);
+    transform: translateY(100%) rotate(15deg);
     opacity: 0;
 }
 
 .titulo1.caida h1 {
-    transform: translateY(150%) rotate(15deg);
+    transform: translateY(-100%); 
     opacity: 0;
 }
