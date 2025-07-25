@@ -4,14 +4,17 @@ const progressBar = document.getElementById('progressBar');
 const currentTime = document.getElementById('currentTime');
 const duration = document.getElementById('duration');
 const volumeSlider = document.getElementById('volumeSlider');
+const albumCover = document.querySelector('.album-cover');
 
 playPauseBtn.addEventListener('click', () => {
   if (audio.paused) {
     audio.play();
     playPauseBtn.textContent = 'Pause';
+    albumCover.classList.add('rotate');
   } else {
     audio.pause();
     playPauseBtn.textContent = 'Play';
+    albumCover.classList.remove('rotate');
   }
 });
 
@@ -23,6 +26,11 @@ audio.addEventListener('timeupdate', () => {
   const progress = (audio.currentTime / audio.duration) * 100;
   progressBar.value = progress;
   currentTime.textContent = formatTime(audio.currentTime);
+});
+
+audio.addEventListener('ended', () => {
+  playPauseBtn.textContent = 'Play';
+  albumCover.classList.remove('rotate');
 });
 
 progressBar.addEventListener('input', () => {
