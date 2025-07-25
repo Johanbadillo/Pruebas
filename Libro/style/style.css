@@ -25,11 +25,13 @@ body {
     align-items: center;
 }
 
-.portada, .decoracion-texto {
+.portada,
+.decoracion-texto {
     transition: transform 1s ease, opacity 1s ease;
 }
 
-.portada.caida, .decoracion-texto.caida {
+.portada.caida,
+.decoracion-texto.caida {
     transform: translateY(150%) rotate(15deg);
     opacity: 0;
 }
@@ -121,11 +123,11 @@ body {
     display: block;
 }
 
-.autor{
-    text-align: center; 
+.autor {
+    text-align: center;
     margin-top: 2rem;
 }
 
-p{
+p {
     font-size: 17px;
 }
