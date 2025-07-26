@@ -1,11 +1,11 @@
-body{
+body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #0a0a23, #1b1b4d); 
+    background: linear-gradient(to bottom, #0a0a23, #1b1b4d);
     text-align: center;
     align-items: center;
 }
@@ -18,34 +18,36 @@ body::before {
     width: 100%;
     height: 100%;
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><circle cx="10" cy="10" r="1" fill="white" opacity="0.3"/><circle cx="50" cy="50" r="1.5" fill="white" opacity="0.5"/><circle cx="80" cy="20" r="1" fill="white" opacity="0.4"/></svg>') repeat;
-    opacity: 0.2; 
-    z-index: -1;
+    opacity: 0.2;
 }
 
-.contenido{
+.contenido {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
-.poemas{
+.poemas {
     width: 250px;
     height: 500px;
-    opacity: 30%;
+    opacity: 0.3;
     transition: all 2.5s ease;
     cursor: pointer;
     border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
-.poemas:hover{
+.poemas:hover {
     width: 300px;
     height: 500px;
     opacity: 1;
     transform: scale(1.1);
 }
 
-.poemas img{
+.poemas img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -60,4 +62,21 @@ body::before {
     margin-bottom: 5vh;
     transition: transform 2s ease, opacity 1s ease;
     transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .poemas {
+        width: 150px;
+        height: 300px;
+    }
+
+    .poemas:hover {
+        width: 180px;
+        height: 300px;
+    }
+
+    .titulo {
+        font-size: 1.2rem;
+        margin-bottom: 3vh;
+    }
 }
