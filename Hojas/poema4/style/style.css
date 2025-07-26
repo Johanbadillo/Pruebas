@@ -1,0 +1,150 @@
+@font-face {
+    font-family: cursiva;
+    src: url(./../fonts/UVF\ Aphrodite\ Pro.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursiva;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1a1a3d, #0a0a23);
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><circle cx="10" cy="10" r="1" fill="white" opacity="0.3"/><circle cx="50" cy="50" r="1.5" fill="white" opacity="0.5"/><circle cx="80" cy="20" r="1" fill="white" opacity="0.4"/></svg>') repeat;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    z-index: -1;
+}
+
+.contenido {
+    width: 600px;
+    text-align: center;
+    margin-bottom: 10vh;
+    position: relative;
+    z-index: 1;
+}
+
+.titulo1 h1 {
+    font-size: 1.8rem;
+    color: #ffff;
+    font-weight: 900;
+    text-shadow: 0px 5px 5px rgb(247, 0, 255);
+    margin-bottom: 5vh;
+    transition: transform 2s ease, opacity 1s ease;
+    transform: translateY(0);
+}
+
+.carta {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Borde más sutil */
+    border-radius: 30px;
+    padding: 8%;
+    background: rgba(255, 255, 255, 0.95);
+    /* Fondo blanco semitransparente */
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgb(255, 255, 255);
+    /* Sombra para profundidad */
+    overflow: hidden;
+}
+
+.carta h2 {
+    font-size: 1.5rem;
+    /* Ajuste para mejor legibilidad */
+    font-weight: bold;
+    margin-bottom: 2vw;
+    color: #483d8b;
+    /* Azul oscuro para armonizar */
+    text-shadow: 1px 1px 5px rgba(138, 43, 226, 0.5);
+    line-height: 28px;
+}
+
+.carta p {
+    font-size: 1.3rem;
+    line-height: 45px;
+    color: #333;
+    /* Color más oscuro para contraste */
+}
+
+.parrafo {
+    margin-bottom: 4vh;
+}
+
+em {
+    font-weight: bold;
+    color: #4b0082;
+    /* Tono índigo para énfasis */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #f105dd;
+    /* Violeta suave */
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: cursiva;
+    box-shadow: 0 0 20px rgb(137, 43, 226);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #ff33f8;
+    /* Cambio sutil al pasar el ratón */
+}
+
+.portada {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.4);
+    transition: transform 2s ease, opacity 1s ease;
+    z-index: 2;
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.portada.caida {
+    transform: translateY(100%) rotate(15deg);
+    opacity: 0;
+}
+
+.titulo1.caida h1 {
+    transform: translateY(-100%);
+    opacity: 0;
+}
