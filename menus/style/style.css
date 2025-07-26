@@ -8,6 +8,7 @@ body {
     background: linear-gradient(to bottom, #0a0a23, #1b1b4d);
     text-align: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 body::before {
