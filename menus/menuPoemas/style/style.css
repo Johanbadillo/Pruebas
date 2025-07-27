@@ -62,9 +62,9 @@ body::before {
     color: #ffff;
     font-weight: 900;
     text-shadow: 0px 5px 5px rgb(247, 0, 255);
-    margin-bottom: 5vh;
     transition: transform 2s ease, opacity 1s ease;
     transform: translateY(0);
+    width: 70%;
 }
 
 @media (max-width: 600px) {
