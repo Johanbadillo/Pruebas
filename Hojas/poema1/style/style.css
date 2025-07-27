@@ -50,7 +50,7 @@ body::after {
     font-size: 1.8rem;
     color: #ffff;
     font-weight: 900;
-    text-shadow: 0px 5px 5px rgb(247, 0, 255);
+    text-shadow: 5px 5px 2px rgb(0, 4, 255);
     margin-bottom: 5vh;
     transition: transform 2s ease, opacity 1s ease;
     transform: translateY(0);
@@ -65,7 +65,7 @@ body::after {
     /* Fondo blanco semitransparente */
     position: relative;
     z-index: 1;
-    box-shadow: 0 10px 20px rgb(255, 255, 255);
+    box-shadow: 0 0 20px 3px white;
     /* Sombra para profundidad */
     overflow: hidden;
 }
@@ -75,9 +75,9 @@ body::after {
     /* Ajuste para mejor legibilidad */
     font-weight: bold;
     margin-bottom: 2vw;
-    color: #483d8b;
+    color: #0914b6;
     /* Azul oscuro para armonizar */
-    text-shadow: 1px 1px 5px rgba(138, 43, 226, 0.5);
+    text-shadow: 1px 1px 5px rgb(109, 0, 252);
     line-height: 28px;
 }
 
@@ -94,29 +94,27 @@ body::after {
 
 em {
     font-weight: bold;
-    color: #4b0082;
-    /* Tono índigo para énfasis */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #0914b6;
+    text-shadow: 1px 1px 3px rgb(76, 0, 255);
 }
 
 button {
-    background-color: #f105dd;
-    /* Violeta suave */
-    color: white;
-    border: 1px solid #ffffff;
+    background-color: #000dc0;
+    color: rgb(255, 255, 255);
+    border: none;
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1rem;
     font-family: cursiva;
-    box-shadow: 0 0 20px rgb(137, 43, 226);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 5px 5px 10px rgb(90, 130, 204);
+    transition: transform 1.5s ease;
 }
 
 button:hover {
     transform: scale(1.1);
-    background-color: #ff33f8;
-    /* Cambio sutil al pasar el ratón */
+    background-color: #1048ff;
+
 }
 
 .portada {
