@@ -102,7 +102,7 @@ button {
     font-size: 1rem;
     font-family: cursiva;
     box-shadow: 5px 5px 10px rgb(33, 92, 255);
-    transition: transform 0.3s ease, box-shadow 2.5s ease;
+    transition: transform 2s ease, box-shadow 2.5s ease;
 }
 
 button:hover {
