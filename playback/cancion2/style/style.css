@@ -24,7 +24,8 @@ body::before {
 
 .container {
   background: rgba(255, 255, 255, 0.05);
-  background-image: url(./../img/fondos.jpg);
+  background: url(./../img/fondo.gif);
+  background-position: center;
   background-size: cover;
   padding: 2rem;
   border-radius: 10px;
@@ -47,7 +48,8 @@ body::before {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
   transition: transform 0.8s ease;
 }
