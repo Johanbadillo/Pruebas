@@ -24,7 +24,7 @@ body::before {
 
 .lista {
     width: 70%;
-    height: 10vh;
+    height: 15vh;
     border: 1px solid black;
     background: url(./../img/pruebas.jpeg);
     margin: 20px;
@@ -96,10 +96,32 @@ body::before {
     border-radius: 50%;
 }
 
-#primera{
-    background: url(./../img/canciones1.jpg);
+@keyframes vueltas {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-#segunda{
-    background: url(./../img/canciones1.jpg);
+#primera {
+    background: url(./../img//fondo1.jpg);
+}
+
+#segunda {
+    background: url(./../img/fondo2.jpg) 0px -260px;
+}
+
+#tercera {
+    background: url(./../img/fondo3.jpg) 0px -500px;
+}
+
+#cuarta {
+    background: url(./../img/fondo4.jpg);
+}
+
+#quinta {
+    background: url(./../img/canciones1.jpg) 0px -80px;
 }
