@@ -26,7 +26,7 @@ body::before {
     width: 70%;
     height: 10vh;
     border: 1px solid black;
-    background: black;
+    background: url(./../img/pruebas.jpeg);
     margin: 20px;
     border-radius: 24px;
     transition: all 2s ease;
@@ -37,7 +37,7 @@ body::before {
 }
 
 .lista:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .tituloPrincipal h1 {
@@ -85,12 +85,21 @@ body::before {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    gap: 1rem;
 }
 
 .lista img {
     height: 100%;
     max-width: 100px;
     object-fit: cover;
-    animation: spin 4s linear infinite;
+    animation: vueltas 4s linear infinite;
     border-radius: 50%;
+}
+
+#primera{
+    background: url(./../img/canciones1.jpg);
+}
+
+#segunda{
+    background: url(./../img/canciones1.jpg);
 }
