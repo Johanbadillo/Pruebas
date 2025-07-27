@@ -24,7 +24,7 @@ body::before {
 
 .container {
   background: rgba(255, 255, 255, 0.05);
-  background-image: url(./../img/fondo.jpg);
+  background-image: url(./../img/fondo.gif);
   background-size: cover;
   padding: 2rem;
   border-radius: 10px;
@@ -93,19 +93,19 @@ body::before {
 }
 
 .play-pause-btn {
-  background: rgba(75, 7, 233, 0.1);
-  color: #0078f8;
+  background: rgba(75, 7, 233, 0.445);
+  color: #ff0000;
   padding: 0.5rem 1.5rem;
   border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: none;
   font-size: 1.2em;
-  text-shadow: 0 0 5px rgba(121, 144, 235, 0.844);
+  text-shadow: 0 0 5px rgb(212, 11, 11);
   transition: all 0.8s ease;
   cursor: pointer;
 }
 
 .play-pause-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(40, 0, 105, 0.966);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   transform: scale(1.1);
 }
@@ -127,9 +127,9 @@ body::before {
   appearance: none;
   width: 1rem;
   height: 1rem;
-  background: #0078f8;
+  background: #ff0000;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.904);
   cursor: pointer;
 }
 
@@ -168,7 +168,7 @@ body::before {
   appearance: none;
   width: 1rem;
   height: 1rem;
-  background: #0078f8;
+  background: #f80000;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   cursor: pointer;
