@@ -1,15 +1,21 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+    background: linear-gradient(to bottom, #0a0a23, #1b1b4d); 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+    flex-direction: column;
 }
 
-.listaScroll{
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 700px;
-    overflow: auto;
-    padding: 50px;
-    box-shadow: 0px 7px 46px 0px black;
-    background: blue;
-    border-radius: 8px;
-    background-image: linear-gradient(145deg, black 0%, blue 74%);
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><circle cx="10" cy="10" r="1" fill="white" opacity="0.3"/><circle cx="50" cy="50" r="1.5" fill="white" opacity="0.5"/><circle cx="80" cy="20" r="1" fill="white" opacity="0.4"/></svg>') repeat;
+    opacity: 0.2; 
+    z-index: -1;
 }
