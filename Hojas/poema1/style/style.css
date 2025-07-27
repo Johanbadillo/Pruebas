@@ -58,25 +58,20 @@ body::after {
 
 .carta {
     border: 1px solid rgba(255, 255, 255, 0.2);
-    /* Borde más sutil */
     border-radius: 30px;
     padding: 8%;
     background: rgba(255, 255, 255, 0.95);
-    /* Fondo blanco semitransparente */
     position: relative;
     z-index: 1;
     box-shadow: 0 0 20px 3px white;
-    /* Sombra para profundidad */
     overflow: hidden;
 }
 
 .carta h2 {
     font-size: 1.5rem;
-    /* Ajuste para mejor legibilidad */
     font-weight: bold;
     margin-bottom: 2vw;
     color: #0914b6;
-    /* Azul oscuro para armonizar */
     text-shadow: 1px 1px 5px rgb(109, 0, 252);
     line-height: 28px;
 }
@@ -85,7 +80,6 @@ body::after {
     font-size: 1.3rem;
     line-height: 45px;
     color: #333;
-    /* Color más oscuro para contraste */
 }
 
 .parrafo {
@@ -108,13 +102,13 @@ button {
     font-size: 1rem;
     font-family: cursiva;
     box-shadow: 5px 5px 10px rgb(90, 130, 204);
-    transition: transform 1.5s ease;
+    transition: transform 1.5s ease, box-shadow 2.5s ease;
 }
 
 button:hover {
     transform: scale(1.1);
     background-color: #1048ff;
-
+    box-shadow: 0 0 10px black;
 }
 
 .portada {
