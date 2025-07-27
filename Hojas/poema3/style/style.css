@@ -50,7 +50,7 @@ body::after {
     font-size: 1.8rem;
     color: #ffff;
     font-weight: 900;
-    text-shadow: 0px 5px 5px rgb(247, 0, 255);
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
     margin-bottom: 5vh;
     transition: transform 2s ease, opacity 1s ease;
     transform: translateY(0);
@@ -58,26 +58,21 @@ body::after {
 
 .carta {
     border: 1px solid rgba(255, 255, 255, 0.2);
-    /* Borde más sutil */
     border-radius: 30px;
     padding: 8%;
     background: rgba(255, 255, 255, 0.95);
-    /* Fondo blanco semitransparente */
     position: relative;
     z-index: 1;
     box-shadow: 0 10px 20px rgb(255, 255, 255);
-    /* Sombra para profundidad */
     overflow: hidden;
 }
 
 .carta h2 {
     font-size: 1.5rem;
-    /* Ajuste para mejor legibilidad */
     font-weight: bold;
     margin-bottom: 2vw;
-    color: #483d8b;
-    /* Azul oscuro para armonizar */
-    text-shadow: 1px 1px 5px rgba(138, 43, 226, 0.5);
+    color: #000000;
+    text-shadow: 1px 1px 5px rgb(58, 140, 247);
     line-height: 28px;
 }
 
@@ -85,7 +80,6 @@ body::after {
     font-size: 1.3rem;
     line-height: 45px;
     color: #333;
-    /* Color más oscuro para contraste */
 }
 
 .parrafo {
@@ -94,29 +88,27 @@ body::after {
 
 em {
     font-weight: bold;
-    color: #4b0082;
-    /* Tono índigo para énfasis */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    text-shadow: 1px 1px 3px rgb(58, 140, 247);
 }
 
 button {
-    background-color: #f105dd;
-    /* Violeta suave */
+    background-color: #0004ff;
     color: white;
-    border: 1px solid #ffffff;
+    border: none;
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1rem;
     font-family: cursiva;
-    box-shadow: 0 0 20px rgb(137, 43, 226);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 5px 5px 10px rgb(33, 92, 255);
+    transition: transform 0.3s ease, box-shadow 2.5s ease;
 }
 
 button:hover {
     transform: scale(1.1);
-    background-color: #ff33f8;
-    /* Cambio sutil al pasar el ratón */
+    background-color: #013cff;
+    box-shadow: 0 0 10px black;
 }
 
 .portada {
