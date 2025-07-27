@@ -31,5 +31,32 @@ body::before {
 }
 
 .lista:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+}
+
+.tituloPrincipal h1{
+    display: flex;
+    font-size: 4rem;
+    color: #ffff;
+    font-weight: 900;
+    text-shadow: 0px 5px 5px rgb(247, 0, 255);
+    margin-bottom: 5vi;
+    margin-top: 5vi;
+    transition: transform 2s ease, opacity 1s ease;
+    transform: translateY(0);
+}
+
+.tituloPrincipal p{
+    font-size: 2rem;
+    width: 70%;
+    font-weight: 100;
+    text-shadow: 5px 5px 5px rgb(195, 0, 255);
+}
+
+.tituloPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
