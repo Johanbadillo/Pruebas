@@ -24,7 +24,7 @@ body::before {
 
 .container {
   background: rgba(255, 255, 255, 0.05);
-  background-image: url(./../img/fondo.jpg);
+  background-image: url(./../img/fondo.gif);
   background-size: cover;
   padding: 2rem;
   border-radius: 10px;
