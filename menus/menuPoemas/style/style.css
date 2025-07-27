@@ -83,7 +83,7 @@ body::before {
         margin-bottom: 3vh;
     }
 
-    .contenido{
+    .contenido {
         display: flex;
         flex-direction: column;
     }
