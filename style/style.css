@@ -96,7 +96,7 @@ body::before {
     display: inline-block;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
-    transition: all 0.8s ease; /* Transición suave */
+    transition: all 0.8s ease; 
 }
 
 .opciones a:hover {
