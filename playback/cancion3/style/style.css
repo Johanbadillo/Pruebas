@@ -7,7 +7,8 @@ body {
   color: #ffffff;
   font-family: 'Arial', sans-serif;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body::before {
@@ -29,10 +30,10 @@ body::before {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-  max-width: 22rem;
+  max-width: 25rem;
   width: 100%;
   text-align: center;
-  margin-top: 40px;
+  height: 550px;
 }
 
 .title {
@@ -47,9 +48,9 @@ body::before {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  margin-bottom: 1.5rem;
+  margin-top: 1rem;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, opacity 0.5s ease;
 }
 
 .album-cover:hover {
@@ -70,44 +71,37 @@ body::before {
   }
 }
 
-.track-title {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #ffffff;
-  text-shadow: 0 0 5px rgba(247, 247, 247, 0.844);
-  margin-bottom: 0.5rem;
-}
-
-.artist {
-  font-size: 1em;
-  color: #ffffffd8;
-  text-shadow: 0 0 5px rgba(121, 144, 235, 0.844);
-  margin-bottom: 1.5rem;
-}
-
 .controls {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .play-pause-btn {
-  background: rgba(75, 7, 233, 0.445);
-  color: #ff0000;
-  padding: 0.5rem 1.5rem;
-  border-radius: 5px;
+  background: transparent;
   border: none;
-  font-size: 1.2em;
-  text-shadow: 0 0 5px rgb(212, 11, 11);
-  transition: all 0.8s ease;
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 
+.play-pause-btn.play {
+  background: url('./../img/play.png') no-repeat center;
+  background-size: contain;
+  height: 4rem;
+}
+
+.play-pause-btn.pause {
+  background: url('./../img/pause.png') no-repeat center;
+  background-size: contain;
+  height: 5rem;
+}
+
 .play-pause-btn:hover {
-  background: rgba(40, 0, 105, 0.966);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .progress-container {
@@ -174,7 +168,8 @@ body::before {
   cursor: pointer;
 }
 
-.container img {
-  background-size: cover;
-  transform: scale(1.2);
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+  }
 }
