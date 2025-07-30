@@ -9,13 +9,21 @@ const albumCover = document.querySelector('.album-cover');
 playPauseBtn.addEventListener('click', () => {
   if (audio.paused) {
     audio.play();
-    playPauseBtn.textContent = 'Pause';
+    playPauseBtn.classList.remove('play');
+    playPauseBtn.classList.add('pause');
     albumCover.classList.add('rotate');
   } else {
     audio.pause();
-    playPauseBtn.textContent = 'Play';
+    playPauseBtn.classList.remove('pause');
+    playPauseBtn.classList.add('play');
     albumCover.classList.remove('rotate');
   }
+});
+
+audio.addEventListener('ended', () => {
+  playPauseBtn.classList.remove('pause');
+  playPauseBtn.classList.add('play');
+  albumCover.classList.remove('rotate');
 });
 
 audio.addEventListener('loadedmetadata', () => {
@@ -26,11 +34,6 @@ audio.addEventListener('timeupdate', () => {
   const progress = (audio.currentTime / audio.duration) * 100;
   progressBar.value = progress;
   currentTime.textContent = formatTime(audio.currentTime);
-});
-
-audio.addEventListener('ended', () => {
-  playPauseBtn.textContent = 'Play';
-  albumCover.classList.remove('rotate');
 });
 
 progressBar.addEventListener('input', () => {
