@@ -7,7 +7,7 @@ body {
   color: #ffffff;
   font-family: 'Arial', sans-serif;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body::before {
@@ -29,10 +29,11 @@ body::before {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-  max-width: 22rem;
+  max-width: 25rem;
   width: 100%;
   text-align: center;
-  margin-top: 40px;
+  height: 550px;
+  align-items: flex-start;
 }
 
 .title {
@@ -47,7 +48,7 @@ body::before {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  margin-bottom: 1.5rem;
+  margin-top: 3rem;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
   transition: transform 0.8s ease;
 }
@@ -70,44 +71,27 @@ body::before {
   }
 }
 
-.track-title {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #ffffff;
-  text-shadow: 0 0 5px rgba(247, 247, 247, 0.844);
-  margin-bottom: 0.5rem;
-}
-
-.artist {
-  font-size: 1em;
-  color: #ffffffd8;
-  text-shadow: 0 0 5px rgba(121, 144, 235, 0.844);
-  margin-bottom: 1.5rem;
-}
-
 .controls {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .play-pause-btn {
-  background: rgba(0, 14, 211, 0.507);
-  color: #ffffff;
-  padding: 0.5rem 1.5rem;
-  border-radius: 5px;
+  background: transparent;
   border: none;
-  font-size: 1.2em;
-  text-shadow: 5px 5px 5px rgb(132, 0, 255);
-  transition: all 0.8s ease;
-  cursor: pointer;
+  display: block;
+  transition: all 1.5s ease;
+}
+
+.play-pause-btn img{
+  background-size: cover;
+  height: 100px;
 }
 
 .play-pause-btn:hover {
-  background: rgba(76, 0, 255, 0.644);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .progress-container {
@@ -117,7 +101,7 @@ body::before {
 .progress-bar {
   width: 100%;
   height: 0.5rem;
-  background: rgba(8, 12, 199, 0.74);
+  background: rgb(255, 255, 255);
   border-radius: 0.5rem;
   cursor: pointer;
   appearance: none;
@@ -127,7 +111,7 @@ body::before {
   appearance: none;
   width: 1rem;
   height: 1rem;
-  background: #37afff;
+  background: #0078f8;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   cursor: pointer;
@@ -158,7 +142,7 @@ body::before {
 .volume-slider {
   width: 6rem;
   height: 0.5rem;
-  background: rgba(255, 255, 255, 0.836);
+  background: rgb(255, 255, 255);
   border-radius: 0.5rem;
   cursor: pointer;
   appearance: none;
@@ -177,4 +161,10 @@ body::before {
 .container img {
   background-size: cover;
   transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    body{
+      align-items: flex-start;
+    }
 }
