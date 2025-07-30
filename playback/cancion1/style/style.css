@@ -50,7 +50,7 @@ body::before {
   border-radius: 50%;
   margin-top: 3rem;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, opacity 0.5s ease;
 }
 
 .album-cover:hover {
@@ -82,12 +82,13 @@ body::before {
   background: transparent;
   border: none;
   display: block;
-  transition: all 1.5s ease;
+  transition: all 0.5s ease;
 }
 
-.play-pause-btn img{
+.play-pause-btn img {
   background-size: cover;
   height: 100px;
+  transition: opacity 0.3s ease;
 }
 
 .play-pause-btn:hover {
@@ -164,7 +165,7 @@ body::before {
 }
 
 @media (max-width: 600px) {
-    body{
-      align-items: flex-start;
-    }
+  body {
+    align-items: flex-start;
+  }
 }
