@@ -8,6 +8,7 @@ body {
   font-family: 'Arial', sans-serif;
   position: relative;
   overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 body::before {
@@ -49,7 +50,7 @@ body::before {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  margin-top: 3rem;
+  margin-top: 1rem;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
   transition: transform 0.8s ease, opacity 0.5s ease;
 }
@@ -92,13 +93,13 @@ body::before {
 .play-pause-btn.play {
   background: url('./../img/play.png') no-repeat center;
   background-size: contain;
-  height: 4vw;
+  height: 4rem;
 }
 
 .play-pause-btn.pause {
   background: url('./../img/pause.png') no-repeat center;
   background-size: contain;
-  height: 5vw;
+  height: 5rem;
 }
 
 .play-pause-btn:hover {
